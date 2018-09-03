@@ -1,0 +1,24 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo center">
+      <i class="material-icons">cloud</i>Online Health Portal</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <a (click)="Logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+ <div class="row" *ngIf="userDetail">
+  <div class="col s12 m7">
+    <div class="card">
+      <div class="card-content">
+        <span>Username :{{userDetail.Email}}</span>
+        <br>
+        <span>Full Name : {{userDetail.FirstName}} {{userDetail.LastName}}</span>
+        <br>
+        <span>Mobile No. : {{userDetail.MobileNo}}</span>
+      </div>
+    </div>
+  </div>
+</div>
